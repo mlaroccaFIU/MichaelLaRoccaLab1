@@ -20,4 +20,16 @@
 		<nature>org.eclipse.wst.common.project.facet.core.nature</nature>
 		<nature>org.eclipse.jdt.core.javanature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>Class Diagram - Hexapod Robot.pdf</name>
+			<type>1</type>
+			<location>G:/My Drive/Spring 2022/ISM6106 Systems Analysis/Projects/Lab 1/Lab1 Class Diagram/Class Diagram - Hexapod Robot.pdf</location>
+		</link>
+		<link>
+			<name>HexapodRobot_Lab1.vpp</name>
+			<type>1</type>
+			<location>G:/My Drive/Spring 2022/ISM6106 Systems Analysis/Projects/Lab 1/Lab1 Class Diagram/HexapodRobot_Lab1.vpp</location>
+		</link>
+	</linkedResources>
 </projectDescription>
