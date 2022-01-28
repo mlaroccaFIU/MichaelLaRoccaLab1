@@ -3,12 +3,14 @@
  */
 package com.mike.lab1;
 
+import edu.fiu.jit.EmptyComponent;
+
 /**
  * Robot main class
  * @author Michael La Rocca
  *
  */
-public class Robot {
+public class Robot extends EmptyComponent{
 	
 	private String model;
 	private String hexpod;
@@ -57,6 +59,12 @@ public class Robot {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 
+	}
+
+	@Override
+	public String getComponentName() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }
