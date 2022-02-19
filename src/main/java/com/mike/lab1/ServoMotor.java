@@ -3,11 +3,13 @@
  */
 package com.mike.lab1;
 
+import edu.fiu.jit.SelfCheckCapable;
+
 /**
  * @author Michael La Rocca
  *
  */
-public class ServoMotor {
+public class ServoMotor implements SelfCheckCapable {
 
 	private double size;
 	private double torque;
@@ -38,5 +40,17 @@ public class ServoMotor {
 	
 	public void rotateGearM04() {
 		//Gears move counter clockwise
+	}
+
+	@Override
+	public String getComponentName() {
+		// TODO Auto-generated method stub
+		return "ServoMotor";
+	}
+
+	@Override
+	public boolean selfCheck() {
+		// TODO Auto-generated method stub
+		return true;
 	}
 }

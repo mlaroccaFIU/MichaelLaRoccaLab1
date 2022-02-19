@@ -3,11 +3,13 @@
  */
 package com.mike.lab1;
 
+import edu.fiu.jit.SelfCheckCapable;
+
 /**
  * @author Michael La Rocca
  *
  */
-public class ControlBoard extends CircuitBoard {
+public class ControlBoard extends CircuitBoard implements SelfCheckCapable {
 
 	private String sensorPort;
 	private String ultrasonicPort;
@@ -32,6 +34,18 @@ public class ControlBoard extends CircuitBoard {
 	
 	public void receiveSensorData() {
 		//Receives measurment data from ultrasonic and MPU6050 modules
+	}
+
+	@Override
+	public String getComponentName() {
+		// TODO Auto-generated method stub
+		return "ControlBoard";
+	}
+
+	@Override
+	public boolean selfCheck() {
+		// TODO Auto-generated method stub
+		return true;
 	}
 	
 	

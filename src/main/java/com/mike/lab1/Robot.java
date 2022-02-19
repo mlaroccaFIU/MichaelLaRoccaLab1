@@ -3,20 +3,51 @@
  */
 package com.mike.lab1;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 import edu.fiu.jit.EmptyComponent;
+import edu.fiu.jit.GenericComponent;
+import edu.fiu.jit.SelfCheckCapable;
 
 /**
  * Robot main class
  * @author Michael La Rocca
  *
  */
-public class Robot extends EmptyComponent{
+public class Robot implements GenericComponent {
 	
 	private String model;
 	private String hexpod;
 	private String gaitType;
 	private int speed; //Measurement in Mph
 	private boolean onOffSate;
+	private RaspberryPi myPi;
+	private ServoMotor myServoMotor;
+	private UpdateClient myUpdateClient;
+	private UltrasonicModule myUltrasonicModule;
+	private MobileDeviceApp myMobileDeviceApp;
+	private Gyro myGyro;
+	private FreenoveCloud myFreenoveCloud;
+	private ControlBoard myControlBoard;
+	private Camera myCamera;
+	private Accelerometer myAccelerometer;
+	private RechargeableBattery myBattery;
+	public Robot() {
+		myPi = new RaspberryPi();
+		myServoMotor = new ServoMotor();
+		myUpdateClient = new UpdateClient();
+		myUltrasonicModule = new UltrasonicModule();
+		myMobileDeviceApp = new MobileDeviceApp();
+		myFreenoveCloud = new FreenoveCloud();
+		myControlBoard = new ControlBoard();
+		myCamera = new Camera();
+		myAccelerometer = new Accelerometer();
+		myGyro = new Gyro();
+		myBattery = new RechargeableBattery();
+		
+	}
 	
 	public void powerOn() {
 		//Power off hexapod robot
@@ -81,7 +112,19 @@ public class Robot extends EmptyComponent{
 	@Override
 	public String getComponentName() {
 		// TODO Auto-generated method stub
-		return null;
+		return "Freenove Big Hexapod Robot";
 	}
+
+	@Override
+	public boolean selfCheck() {
+		// TODO Auto-generated method stub
+		return true;
+	}
+
+	@Override
+	public List<SelfCheckCapable> getSubComponents() {
+		List internalComponents = new ArrayList(); // create an empty list
+		Collections.addAll(internalComponents, myPi, myServoMotor, myUpdateClient, myUltrasonicModule, myMobileDeviceApp, myGyro, myFreenoveCloud, myControlBoard, myCamera, myAccelerometer, myBattery); // add all your sub components
+		return internalComponents;	}
 
 }

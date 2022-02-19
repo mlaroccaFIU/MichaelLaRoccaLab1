@@ -3,11 +3,13 @@
  */
 package com.mike.lab1;
 
+import edu.fiu.jit.SelfCheckCapable;
+
 /**
  * @author Michael La Rocca
  *
  */
-public class MobileDeviceApp {
+public class MobileDeviceApp implements SelfCheckCapable {
 
 	private String operatingSystem;
 	private double appVersion;
@@ -58,5 +60,17 @@ public class MobileDeviceApp {
 	
 	public void startRemoteUpdate() {
 		//User input to start remote update once the update files have been downloaded locally to the Raspberry Pi
+	}
+
+	@Override
+	public String getComponentName() {
+		// TODO Auto-generated method stub
+		return "MobileDeviceApp";
+	}
+
+	@Override
+	public boolean selfCheck() {
+		// TODO Auto-generated method stub
+		return true;
 	}
 }

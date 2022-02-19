@@ -3,11 +3,13 @@
  */
 package com.mike.lab1;
 
+import edu.fiu.jit.SelfCheckCapable;
+
 /**
  * @author Michael La Rocca
  *
  */
-public class Gyro {
+public class Gyro implements SelfCheckCapable {
 
 	private String threeAxis;
 	
@@ -25,6 +27,18 @@ public class Gyro {
 	
 	public void getOrientationZ() {
 		//Measures gyro Z axis orientation
+	}
+
+	@Override
+	public String getComponentName() {
+		// TODO Auto-generated method stub
+		return "Gyro";
+	}
+
+	@Override
+	public boolean selfCheck() {
+		// TODO Auto-generated method stub
+		return true;
 	}
 	
 }

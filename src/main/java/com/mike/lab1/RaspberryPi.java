@@ -3,11 +3,13 @@
  */
 package com.mike.lab1;
 
+import edu.fiu.jit.SelfCheckCapable;
+
 /**
  * @author Michael La Rocca
  *
  */
-public class RaspberryPi extends CircuitBoard {
+public class RaspberryPi extends CircuitBoard implements SelfCheckCapable {
 
 	private String operatingSystem;
 	private boolean onOffState;
@@ -62,6 +64,18 @@ public class RaspberryPi extends CircuitBoard {
 	
 	public void updateRaspbian() {
 		//Updates the Raspberry Pi's operating system to the latest version of Raspbian
+	}
+
+	@Override
+	public String getComponentName() {
+		// TODO Auto-generated method stub
+		return "RaspberryPi";
+	}
+
+	@Override
+	public boolean selfCheck() {
+		// TODO Auto-generated method stub
+		return true;
 	}
 	
 }

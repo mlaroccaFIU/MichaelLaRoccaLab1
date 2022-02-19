@@ -3,11 +3,13 @@
  */
 package com.mike.lab1;
 
+import edu.fiu.jit.SelfCheckCapable;
+
 /**
  * @author Michael La Rocca
  *
  */
-public class Camera {
+public class Camera implements SelfCheckCapable {
 
 	private int horizResolution;
 	private int vertResolution;
@@ -35,6 +37,18 @@ public class Camera {
 	
 	public void facialRecognition() {
 		//Uses biometric mapping and learning to recognize the user
+	}
+
+	@Override
+	public String getComponentName() {
+		// TODO Auto-generated method stub
+		return "Camera";
+	}
+
+	@Override
+	public boolean selfCheck() {
+		// TODO Auto-generated method stub
+		return true;
 	}
 }
 
