@@ -42,11 +42,11 @@ public class Robot extends EmptyComponent{
 		//Move robot backward
 	}
 	
-	public void twistLeft() {
+	public void rotateLeft() {
 		//Rotate robot left
 	}
 	
-	public void twistRight() {
+	public void rotateRight() {
 		//Rotate robot right
 	}
 	
