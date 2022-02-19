@@ -12,7 +12,7 @@ public class UltrasonicModule extends Sensor {
 	private double transmitter;
 	private double receiver;
 	
-	public void getDistance() {
+	public void calculateDistance() {
 		//Measures distance between sensor and obstacle 
 	}
 	
@@ -22,5 +22,13 @@ public class UltrasonicModule extends Sensor {
 	
 	public void sendMeasurement() {
 		//Sends distance measurements and object readings
+	}
+	
+	public void runCalibration() {
+		//Runs sensor calibration commands
+	}
+	
+	public void runTest() {
+		//Runs sensor test scenarios defined by Freenove Cloud
 	}
 }

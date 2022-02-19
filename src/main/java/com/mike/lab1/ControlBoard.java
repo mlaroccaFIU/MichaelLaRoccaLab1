@@ -13,7 +13,6 @@ public class ControlBoard extends CircuitBoard {
 	private String ultrasonicPort;
 	private String servoPort;
 	private String ledPort;
-	private String dcSocket;
 	
 	public void sendPi() {
 		//Send data or commands to Raspberry Pi
@@ -25,6 +24,10 @@ public class ControlBoard extends CircuitBoard {
 	
 	public void getPower() {
 		//Receives power from batteries
+	}
+	
+	public void controlServoPower() {
+		//Controls the power output to the servo motors
 	}
 	
 	public void receiveSensorData() {

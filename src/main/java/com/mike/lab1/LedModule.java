@@ -11,7 +11,7 @@ public class LedModule {
 
 	private String color;
 	private int lumen;
-	private boolean onoffstate;
+	private boolean onOffstate;
 	
 	public void turnOn() {
 		//Turn on LED

@@ -16,8 +16,20 @@ public class ServoMotor {
 	private int rotationDegree;
 	private int voltage;
 	
-	public void start() {
+	public void activate() {
 		//Starts servo motor gears based on received commands from user->Pi->Control board
+	}
+	
+	public void deactivate() {
+		//Stops servo motor gears based
+	}
+	
+	public void accelerate() {
+		//Accelerates gear movement
+	}
+	
+	public void relax() {
+		//Brings legs to a curled state when Relax mode is activated
 	}
 	
 	public void rotatenGearM03() {
@@ -26,9 +38,5 @@ public class ServoMotor {
 	
 	public void rotateGearM04() {
 		//Gears move counter clockwise
-	}
-	
-	public void accelerate() {
-		//Accelerates gear movement
 	}
 }

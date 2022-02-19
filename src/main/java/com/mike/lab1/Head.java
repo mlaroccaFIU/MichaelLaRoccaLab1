@@ -9,23 +9,23 @@ package com.mike.lab1;
  */
 public class Head {
 
-	private int turnAngle; //Angle at which the head can turn at
-	private int pivotAngle; // Angle at which the head look up or down
+	private int panAngle; //Angle at which the head can turn at
+	private int tiltAngle; // Angle at which the head look up or down
 	
-	public void turnLeft() {
-		//Turn head left
+	public void panLeft() {
+		//Pans head left
 	}
 	
-	public void turnRight() {
-		//Turn head right
+	public void panRight() {
+		//Pans head right
 	}
 	
-	public void lookUp() {
-		//Move head to look up
+	public void tiltUp() {
+		//Tilts head to look up
 	}
 	
-	public void lookDown() {
-		//Move head to look down
+	public void tiltDown() {
+		//Tilts head to look down
 	}
 	
 	

@@ -10,7 +10,7 @@ package com.mike.lab1;
 public class RaspberryPi extends CircuitBoard {
 
 	private String operatingSystem;
-	private boolean onoffState;
+	private boolean onOffState;
 	
 	public void turnOn() {
 		//Turns on Raspberry Pi when power source is detected
@@ -44,7 +44,24 @@ public class RaspberryPi extends CircuitBoard {
 		//Triggers robot's buzzer based on threshold conditions
 	}
 	
-	public void sendAppData() {
-		//Sends output data to user's mobile device application
+	public void calibrateUltrasonic() {
+		//Sends ultrasonic calibration operations to the module
 	}
+	
+	public void downloadUpdatePackage() {
+		//Downloads the Freenove update files through the update client
+	}
+	
+	public void installUpdatePackage() {
+		//Installs the download Freenove update package
+	}
+	
+	public void verifyVoltage() {
+		//Verify the power input voltage meets requirements
+	}
+	
+	public void updateRaspbian() {
+		//Updates the Raspberry Pi's operating system to the latest version of Raspbian
+	}
+	
 }

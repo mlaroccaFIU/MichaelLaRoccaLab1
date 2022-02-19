@@ -33,6 +33,8 @@ public class Camera {
 		//Turns off camera
 	}
 	
-	
+	public void facialRecognition() {
+		//Uses biometric mapping and learning to recognize the user
+	}
 }
 

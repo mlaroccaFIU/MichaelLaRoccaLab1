@@ -35,4 +35,28 @@ public class MobileDeviceApp {
 	public void requestVideo() {
 		//Starts recording video from robot's camera feed
 	}
+	
+	public void receiveNotification() {
+		//Receives notifications from the Freenove cloud such fore example new update available
+	}
+	
+	public void pushNotification() {
+		//Pushes the Freenove cloud's notification to the user's device
+	}
+	
+	public void receiveUpdateDisclaimer() {
+		//Displays a disclaimer to the user before proceeding with a remote update to ensure batteries are fully charged
+	}
+	
+	public void acceptUpdate() {
+		//User input accepting to proceed with remote update
+	}
+	
+	public void declineUpdate() {
+		//User input declining to proceed with remote update
+	}
+	
+	public void startRemoteUpdate() {
+		//User input to start remote update once the update files have been downloaded locally to the Raspberry Pi
+	}
 }

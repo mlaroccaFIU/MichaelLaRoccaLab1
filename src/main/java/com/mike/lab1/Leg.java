@@ -28,4 +28,8 @@ public class Leg {
 	public void bendLeg() {
 		//Bends leg in to allow robot to lower body
 	}
+	
+	public void waveHello() {
+		//Moves front right leg in a waving hello motion when the camera's facial recognition featured detects the user
+	}
 }
